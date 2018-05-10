@@ -1,0 +1,62 @@
+@import './vendors';
+
+$white: #fff;
+$background: #F2F7F8;
+
+body {
+    background-color: $background;
+    font-family: 'Rubik', serif;
+}
+
+.is-internal {
+    padding: 15px;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.topbar {
+    min-height: 50px;
+    padding: 5px;
+    span, a, p, strong {
+        color: $white;
+    }
+    background: #0178bc;
+    background: -moz-linear-gradient(left, #318f94 0%, #5ec58c 100%);
+    background: -webkit-linear-gradient(left, #318f94 0%, #5ec58c 100%);
+    background: linear-gradient(to right, #318f94 0%, #5ec58c 100%);
+  }
+
+  .timeline-marker {
+      color: $white;
+  }
+  
+.is-circular img {
+    border-radius: 50%;
+}
+
+.is-menu {
+    min-height: 48px;
+    height: 48px;
+    margin-top:5px;
+}
+
+.is-vcentered {
+    -webkit-box-align: center;
+       -ms-flex-align: center;
+          align-items: center;
+  }
+
+.card-content {
+    h2 {
+        font-weight: 300!important;
+        line-height: 36px;
+        font-size: 24px;
+    }
+    h4 {
+        color: #2c2b2e;
+        font-weight: 400;
+        font-size: 18px;
+    }
+}
