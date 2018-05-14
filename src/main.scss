@@ -15,6 +15,11 @@ $quickview-custom-bg: #272C33;
 body {
     background-color: $background;
     font-family: 'Rubik', serif;
+    min-height: 100vh;
+}
+
+.columns {
+    margin-right: 0 !important;
 }
 
 .is-internal {
@@ -55,15 +60,22 @@ strong {
   }
 
 .card-content {
+    label {
+        font-weight: 500;
+    }
     h2 {
         font-weight: 300!important;
         line-height: 36px;
         font-size: 24px;
+        padding-bottom: 10px;
     }
     h4 {
         color: #2c2b2e;
         font-weight: 400;
         font-size: 18px;
+    }
+    p {
+        padding-bottom: 10px;
     }
 }
 
@@ -97,4 +109,27 @@ strong {
             }
         }
     }
+}
+
+.interactive-bg {
+    height: 100vh;
+    background-color: #00d1b2;
+    -webkit-box-shadow: inset 24px 4px 64px -24px rgba(71,71,71,1);
+    -moz-box-shadow: inset 24px 4px 64px -24px rgba(71,71,71,1);
+    box-shadow: inset 24px 4px 64px -24px rgba(71,71,71,1);
+    padding: 0px;
+  }
+  @media (max-width: 769px) {
+    .interactive-bg{
+      display: none
+    }
+  }
+  
+
+.input-down-bordered {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid !important #646F7F;
+    box-shadow: unset;
 }
