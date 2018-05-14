@@ -2,6 +2,15 @@
 
 $white: #fff;
 $background: #F2F7F8;
+$top-height: 50px;
+$quickview-custom-bg: #272C33;
+
+%navbar-color {
+    background: #0178bc;
+    background: -moz-linear-gradient(left, #318f94 0%, #5ec58c 100%);
+    background: -webkit-linear-gradient(left, #318f94 0%, #5ec58c 100%);
+    background: linear-gradient(to right, #318f94 0%, #5ec58c 100%);
+}
 
 body {
     background-color: $background;
@@ -17,15 +26,12 @@ strong {
 }
 
 .topbar {
-    min-height: 50px;
+    min-height: $top-height;
     padding: 5px;
     span, a, p, strong {
         color: $white;
     }
-    background: #0178bc;
-    background: -moz-linear-gradient(left, #318f94 0%, #5ec58c 100%);
-    background: -webkit-linear-gradient(left, #318f94 0%, #5ec58c 100%);
-    background: linear-gradient(to right, #318f94 0%, #5ec58c 100%);
+    @extend %navbar-color;
   }
 
   .timeline-marker {
@@ -58,5 +64,37 @@ strong {
         color: #2c2b2e;
         font-weight: 400;
         font-size: 18px;
+    }
+}
+
+
+.quickview-custom  {
+    padding: 0;
+    .quickview-header {
+        min-height: ($top-height + 8) !important;
+        height: ($top-height + 8) !important;
+        @extend %navbar-color;
+        .title { 
+            color: $white;
+        }
+    }
+    .quickview-body {
+        background: $quickview-custom-bg;
+        color: #ccc;
+        .menu-list {
+            li {
+                border-radius: 0;
+                a {
+                    color: #646F7F;
+                    font-weight: 400;
+                    padding: 20px;
+                    border-radius: 0;
+                    &:hover {
+                        color: #62D06F;
+                        border-left: 5px solid #62D06F;
+                    }
+                }
+            }
+        }
     }
 }
