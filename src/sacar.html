@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PagFit</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body>
+    <div class="container is-fullhd topbar">
+        <div class="columns is-mobile">
+            <div class="column is-three-quarters is-vcentered">
+                <article class="media">
+                    <figure class="media-left">
+                        <p class="image is-48x48 is-circular">
+                            <img src="assets/profile.jpg">
+                        </p>
+                    </figure>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong>Luiz Gonçalves</strong>
+                                <br>Conta ativada</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="column is-menu">
+                <a class="is-pulled-right" data-show="quickview" data-target="quickviewDefault">
+                    <span class="fa fa-bars fa-2x fa-fw"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container is-fullhd is-internal">
+        <div class="card">
+            <div class="card-content">
+                <h2>Saque para Conta Bancária</h2>
+                <div class="field">
+                    <label class="label">Valor a sacar</label>
+                    <div class="control">
+                        <input class="input input-down-bordered" type="text" placeholder="Mínimo: R$ 5,00">
+                    </div>
+                    <p class="help">Tarifa: R$ 3,50 do valor acima se inferior a R$ 50</p>
+                </div>
+                <div class="content">
+                    Dados de depósito:
+                    <ul>
+                        <li>Banco: 237 - Bradesco</li>
+                        <li>Tipo: Pessoa Física</li>
+                        <li>Operação: 001 - C. Corrente</li>
+                        <li>Agência: 2810-0</li>
+                        <li>Conta: 22885-0</li>
+                    </ul>
+                </div>
+                <div class="control">
+                    <a href="confirmar-saque.html" class="button is-success is-large is-fullwidth">Solicitar saque</a>
+                </div>
+                <p class="help has-text-grey">Os depósitos são realizados em até dois dias úteis</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="quickviewDefault" class="quickview quickview-custom">
+        <header class="quickview-header">
+            <p class="title">Menu</p>
+            <span class="delete" data-dismiss="quickview"></span>
+        </header>
+        <div class="quickview-body">
+            <aside class="menu">
+                <ul class="menu-list">
+                    <li>
+                        <a href="dashboard.html">
+                            <span class="fa fa-fw fa-dollar-sign"></span> Saldo</a>
+                    </li>
+                    <li>
+                        <a href="recarga.html">
+                            <span class="fa fa-fw fa-sync"></span> Recarga de conta</a>
+                    </li>
+                    <li>
+                        <a href="pagar.html">
+                            <span class="fa fa-fw fa-paper-plane"></span> Fazer pagamento</a>
+                    </li>
+                    <li>
+                        <a href="gerar.html">
+                            <span class="fa fa-fw fa-share-alt"></span> Gerar link de pagamento</a>
+                    </li>
+                    <li>
+                        <a href="sacar.html">
+                            <span class="fa fa-fw fa-university"></span> Saque na conta bancária</a>
+                    </li>
+                    <li>
+                        <a href="perfil.html">
+                            <span class="fa fa-fw fa-user-circle"></span> Atualizar dados</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+    <script src="js/index.min.js"></script>
+</body>
+
+</html>
